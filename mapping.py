@@ -28,7 +28,7 @@ def processdata(filename):
 #processdata("responsetimes.csv")
 processeddata = pd.read_csv("processeddata.csv", dtype={'zipcode': str})
 
-map = folium.Map(location=[40.7128, -74.0060], zoom_start=12)
+map = folium.Map(location=[40.7420, -73.9073], zoom_start=11)
 
 folium.Choropleth(
     geo_data="zipcodes.json",
