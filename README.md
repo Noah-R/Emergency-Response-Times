@@ -1,6 +1,10 @@
-Data from https://data.cityofnewyork.us/Public-Safety/EMS-Incident-Dispatch-Data/76xm-jjuj
+EMS data from https://data.cityofnewyork.us/Public-Safety/EMS-Incident-Dispatch-Data/76xm-jjuj
 
 API queried with https://data.cityofnewyork.us/resource/76xm-jjuj.csv?$limit=22000000&$select=INCIDENT_TRAVEL_TM_SECONDS_QY,%20ZIPCODE&$where=INCIDENT_TRAVEL_TM_SECONDS_QY%3E0
+
+Fire data from https://data.cityofnewyork.us/Public-Safety/Fire-Incident-Dispatch-Data/8m42-w767
+
+API queried with https://data.cityofnewyork.us/resource/8m42-w767.csv?$limit=22000000&$select=INCIDENT_TRAVEL_TM_SECONDS_QY,%20ZIPCODE&$where=INCIDENT_TRAVEL_TM_SECONDS_QY%3E0
 
 Using folium http://python-visualization.github.io/folium/quickstart.html#Getting-Started
 

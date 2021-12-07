@@ -23,10 +23,11 @@ def processdata(filename):
     processeddata["zipcode"] = zipcodes
     processeddata["average_response_time"] = averages
 
-    processeddata.to_csv("processeddata.csv", index=False)
+    processeddata.to_csv(folder+"processeddata.csv", index=False)
 
-#processdata("responsetimes.csv")
-processeddata = pd.read_csv("processeddata.csv", dtype={'zipcode': str})
+folder="fire/"
+processdata(folder+"responsetimes.csv")
+processeddata = pd.read_csv(folder+"processeddata.csv", dtype={'zipcode': str})
 
 map = folium.Map(location=[40.7420, -73.9073], zoom_start=11)
 
@@ -43,4 +44,4 @@ folium.Choropleth(
 
 folium.LayerControl().add_to(map)
 
-map.save("map.html")
+map.save(folder+"map.html")
